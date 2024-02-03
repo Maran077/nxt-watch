@@ -1,0 +1,36 @@
+.home {
+  width: calc(100dvw - 150px);
+  translate: 0 calc(60px - 100dvh);
+  margin-left: auto;
+}
+
+.home > ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchbar {
+  display: flex;
+}
+.searchbar > input,
+.searchbar > button {
+  outline: none;
+  border: solid #f1f5f9 2px;
+  background-color: #f9f9f9;
+  height: 35px;
+  padding-left: 20px;
+}
+.no-videos-img {
+  width: 300px;
+}
+@media (max-width: 560px) {
+  .home {
+    width: 100dvw;
+  }
+  .home > ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
